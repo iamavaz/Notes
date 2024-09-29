@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  
+  font: inherit;
+  background: inherit;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-font: #fff;
+  --color-background: #111;
+}
+
+::selection {
+  background: inherit;
+}
+
+html {
+  color: var(--color-font);
+  background-color: var(--color-background);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}

@@ -1,0 +1,108 @@
+@import url('./index.css');
+
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Title */
+#title {
+  margin: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1rem;
+  font-family: IBM Plex Sans;
+}
+
+#title a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#license, #license a {
+  color: #c5c9c7;
+  margin-top: 5px;
+  font-size: 0.75rem;
+}
+/*  */
+
+
+/* Input container */
+input {
+  width: 300px;
+  padding: 10px;
+
+  font-size: 15px;
+  color: var(--color-font);
+  font-family: sans-serif;
+
+  border-radius: 10px;
+  outline: 1px solid #fff;
+}
+/*  */
+
+
+/* Notes */
+.notes {
+  max-width: 300px;
+  width: 100%;
+
+  margin: 1.5em 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-family: sans-serif;
+}
+/*  */
+
+
+/* Toast Message */
+.toast {
+  z-index: 999;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  color: #fff;
+  background-color: #222;
+
+  font-size: 14px;
+  font-family: sans-serif;
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/*  */
+
+
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 2vh 0;
+  }
+
+  .notes {
+    margin-top: 5vw;
+    font-size: 4vw;
+  }
+
+  li {
+    height: 10vw;
+  }
+}
+/*  */
